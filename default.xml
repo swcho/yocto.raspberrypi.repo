@@ -6,7 +6,7 @@
   <project path="." name="poky.git"/>
   <project path="meta-raspberrypi" name="meta-raspberrypi"/>
   <project path="meta-raspberrypi" name="meta-raspberrypi"/>
-  <project path="myconf" name="yocto.raspberrypi.conf">
+  <project path="myconf" remote="swcho" name="yocto.raspberrypi.conf">
     <copyfile src="bblayers.conf" dest="build/conf/bblayers.conf"/>
   </project>
 </manifest>
