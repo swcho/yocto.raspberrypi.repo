@@ -2,10 +2,10 @@
 <manifest>
   <remote name="yocto_project" fetch="git://git.yoctoproject.org"/>
   <remote name="swcho" fetch="https://github.com/swcho"/>
-  <default revision="refs/heads/dizzy" remote="yocto_project"/>
-  <project path="." name="poky.git"/>
-  <project path="meta-raspberrypi" name="meta-raspberrypi"/>
-  <project path="myconf" remote="swcho" name="yocto.raspberrypi.conf">
+  <default revision="refs/heads/master" remote="swcho"/>
+  <project path="." name="poky.git" revision="refs/heads/dizzy" remote="yocto_project"/>
+  <project path="meta-raspberrypi" name="meta-raspberrypi" revision="refs/heads/dizzy" remote="yocto_project"/>
+  <project path="myconf" name="yocto.raspberrypi.conf">
     <copyfile src="bblayers.conf" dest="build/conf/bblayers.conf"/>
   </project>
 </manifest>
