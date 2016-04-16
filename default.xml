@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="yocto_project" fetch="git://git.yoctoproject.org"/>
+  <remote name="swcho" fetch="https://github.com/swcho"/>
   <default revision="refs/heads/dizzy" remote="yocto_project"/>
   <project path="." name="poky.git"/>
   <project path="meta-raspberrypi" name="meta-raspberrypi"/>
+  <project path="meta-raspberrypi" name="meta-raspberrypi"/>
+  <project path="myconf" name="yocto.raspberrypi.conf">
+    <copyfile src="bblayers.conf" dest="build/conf/bblayers.conf"/>
+  </project>
 </manifest>
