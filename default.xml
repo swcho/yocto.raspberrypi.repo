@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="yocto_project" fetch="git://git.yoctoproject.org"/>
-  <default revision="refs/heads/dylan" remote="yocto_project"/>
+  <default revision="refs/heads/dizzy" remote="yocto_project"/>
   <project path="." name="poky.git"/>
   <project path="meta-raspberrypi" name="meta-raspberrypi"/>
 </manifest>
